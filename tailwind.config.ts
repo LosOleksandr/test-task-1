@@ -20,6 +20,7 @@ const config: Config = {
         secondary: "var(--secondary)",
         thirdly: "var(--thirdly)",
         accent: "var(--accent)",
+        accent_hover: "var(--accent-hover)",
         success: "var(--success)",
         success_secondary: "var(--success-secondary)",
         input: "var(--input)",

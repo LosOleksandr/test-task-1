@@ -1,7 +1,4 @@
-import ChadLogo from "./components/icons/chadLogo";
-import IconEye from "./components/icons/iconEye";
-import IconEyeOff from "./components/icons/iconEyeOff";
-import IconSuccess from "./components/icons/iconSuccess";
+import Button from "./components/ui/button";
 
 export default function Home() {
   return (
@@ -10,10 +7,9 @@ export default function Home() {
         <div className="bg-background_secondary"></div>
         <div className="bg-background-image bg-repeat bg-contain">
           <p>
-            <ChadLogo />
-            <IconEye />
-            <IconEyeOff />
-            <IconSuccess />
+            <Button variant="ghost">
+              Button
+            </Button>
           </p>
         </div>
       </div>
