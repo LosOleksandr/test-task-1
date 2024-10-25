@@ -4,18 +4,23 @@
 
 :root {
   --background: #ffffff;
+  --background-secondary: #0d314f;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --primary: #4f637d;
+  --primary-foreground: #f8f9fc;
+  --secondary: #134267;
+  --thirdly: #96caf7;
+  --accent: #32abf2;
+  --success: #65bd47;
+  --success-secondary: #f3fcf4;
+  --input: #f8f9fc;
+  --muted: #5d7fa3;
+  --gmail: #5383ec;
+  --dark: #030e16;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Inter", sans-serif;
 }
