@@ -24,6 +24,7 @@ const config: Config = {
         success: "var(--success)",
         success_secondary: "var(--success-secondary)",
         input: "var(--input)",
+        placeholder: "var(--placeholder)",
         muted: "var(--muted)",
         gmail: "var(--gmail)",
         dark: "var(--dark)",

@@ -1,12 +1,11 @@
 import * as React from "react";
 import { Slot } from "@radix-ui/react-slot";
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   asChild?: boolean;
   variant?: "default" | "ghost";
   size?: "icon" | "small" | "medium" | "large";
-}
+};
 
 const getButtonVariant = (
   variant: ButtonProps["variant"] = "default",
