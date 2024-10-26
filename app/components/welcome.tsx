@@ -7,6 +7,7 @@ import Button from "./ui/button";
 import ChadLogo from "./icons/chadLogo";
 import Link from "next/link";
 import Label from "./ui/label";
+import { useAuthProgress } from "../context/authProgressContext";
 
 const Welcome = () => {
   const initialValues = {
@@ -21,6 +22,9 @@ const Welcome = () => {
   const onSubmit = (values: typeof initialValues) => {
     console.log(values);
   };
+
+  const { step } = useAuthProgress();
+  console.log("step : ", step);
 
   return (
     <div className="w-full max-w-[480px] px-8 py-9 bg-background rounded-md shadow-md">
