@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { AuthProgressProvider } from "./context/authProgressContext";
 
 export const metadata: Metadata = {
   title: "Register Page",
@@ -20,7 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.className}>
-      <body>{children}</body>
+      <body>
+        <AuthProgressProvider>{children}</AuthProgressProvider>
+      </body>
     </html>
   );
 }
